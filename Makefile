@@ -15,10 +15,6 @@ init-db:
 run:
 	.env/bin/uvicorn app.main:app --reload
 
-# run env & server
-start:
-	bash start.sh
-
 remove-db:
 	rm -f ./tasks.db
 
