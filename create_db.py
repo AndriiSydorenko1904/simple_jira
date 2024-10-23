@@ -17,5 +17,10 @@ users = [
 ]
 
 db.add_all(users)
-db.commit()
+
+try:
+    db.commit()
+except Exception:
+    pass
+
 db.close()
