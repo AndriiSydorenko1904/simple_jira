@@ -5,7 +5,6 @@ from app.config import TaskStatus
 
 
 def send_email_mock(to_email: str, task_title: str, new_status: str):
-    import ipdb;ipdb.set_trace(context=20)
     from_email = "your-email@example.com"
     subject = f"Task '{task_title}' status changed"
     
